@@ -10,7 +10,7 @@
       <div id="first-section-id">
         <h3>Enter your Livestorm session ID and email address</h3>
         <div class="container">
-          <form id="signup">
+          <form id="load_embedded_room">
             <div class="field">
               <label for="session">Session</label>
               <input type="text" id="session" name="session" placeholder="Enter Livestorm session id" />
@@ -86,7 +86,7 @@
       return json
     }
   
-    const form = document.querySelector("#signup");
+    const form = document.querySelector("#load_embedded_room");
     
     const SESSION_REQUIRED = "Please enter the Livestorm session ID";
     const EMAIL_REQUIRED = "Please enter your email";
