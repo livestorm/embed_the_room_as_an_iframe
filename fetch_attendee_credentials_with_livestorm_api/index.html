@@ -10,7 +10,7 @@
       <div id="first-section-id">
         <h3>Enter your Livestorm session ID and email address</h3>
         <div class="container">
-          <form id="signup">
+          <form id="load_embedded_room">
             <div class="field">
               <label for="session">Session</label>
               <input type="text" id="session" name="session" placeholder="Enter Livestorm session id" />
@@ -86,11 +86,13 @@
       return json
     }
   
-    const form = document.querySelector("#signup");
+    const form = document.querySelector("#load_embedded_room");
     
     const SESSION_REQUIRED = "Please enter the Livestorm session ID";
     const EMAIL_REQUIRED = "Please enter your email";
     const EMAIL_INVALID = "Please enter a correct email address format";
+
+    const LIVESTORM_BASE_API_URL = "https://api.livestorm.co"
     
     form.addEventListener("submit", async function (event) {
       // stop form submission
@@ -110,7 +112,7 @@
       console.log('sessionIdValue :', sessionIdValue)
       console.log('emailValue :', emailValue)
 
-      const url = `https://api.orlando.entropy.staging.livestorm.io/v1/sessions/${sessionIdValue}/people?filter[email]="${encodeURIComponent(emailValue)}"`
+      const url = `${LIVESTORM_BASE_API_URL}/v1/sessions/${sessionIdValue}/people?filter[email]="${encodeURIComponent(emailValue)}"`
       const jwt = "PASTE_YOUR_LIVESTORM_API_JWT"
 
       const response = await fetchUserData(url, jwt)
@@ -120,7 +122,7 @@
       const key = response.data[0].attributes.registrant_detail.password_key
       const eventId = response.data[0].attributes.registrant_detail.event_id
 
-      const livestormRoomURL = `https://app.orlando.entropy.staging.livestorm.io/p/${eventId}/live?email=${emailValue}&key=${key}&is_embedded_in_iframe=true#/`
+      const livestormRoomURL = `${LIVESTORM_BASE_API_URL}/p/${eventId}/live?email=${emailValue}&key=${key}&is_embedded_in_iframe=true#/`
 
       const livestormIframe = document.querySelector('#livestorm-room-id')
       livestormIframe.src = livestormRoomURL

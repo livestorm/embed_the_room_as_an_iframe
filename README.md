@@ -67,6 +67,4 @@ curl --request PUT \
 
 ## Examples
 
-### fetch_attendee_credentials_with_livestorm_api
-
-
+### [fetch_attendee_credentials_with_livestorm_api](https://github.com/livestorm/embed_the_room_as_an_iframe/tree/main/fetch_attendee_credentials_with_livestorm_api)
