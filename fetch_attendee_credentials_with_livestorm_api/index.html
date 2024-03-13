@@ -122,7 +122,7 @@
       const key = response.data[0].attributes.registrant_detail.password_key
       const eventId = response.data[0].attributes.registrant_detail.event_id
 
-      const livestormRoomURL = `${LIVESTORM_BASE_API_URL}/p/${eventId}/live?email=${emailValue}&key=${key}&is_embedded_in_iframe=true#/`
+      const livestormRoomURL = `${LIVESTORM_BASE_API_URL}/p/${eventId}/live?s=${sessionIdValue}&email=${emailValue}&key=${key}&is_embedded_in_iframe=true#/`
 
       const livestormIframe = document.querySelector('#livestorm-room-id')
       livestormIframe.src = livestormRoomURL
