@@ -7,10 +7,25 @@ Livestorm sessions within an external webiste.
 
 In order to embed a Livestorm session within an external website, a team member
 must explicitly configure the following:
+- make the event publicly accessible only
+    - this can be done from the Livestorm dashboard and will affect all the
+      sessions for the event. See [below](#make-the-event-publicly-accessible-only)
 - define the external URL allowed to embed the session
-    - this is done on a per session basis using the Livestorm API
+    - this is done on a per session basis using the Livestorm API, as described [below](#define-the-external-url-to-embed-a-livestorm-session)
 - configure his embedding web page to build the `<iframe />` DOM element that
   will hold the Livestorm session
+
+### make the event publicly accessible only
+
+In order for an event to be publicly accessible, go to the Registration settings
+of the event and remove the `email` field from the list of required registration
+fields.
+
+Note that, in that case, you would still be able to register participants to the
+event with a unique link, but the provided email address would be anonymised to
+something like `1720541770+a3ca5465-bc23-4999-b28d-03a23eb46a94@unknown.livestorm.co`
+
+
 
 ### define the external URL to embed a Livestorm session
 
