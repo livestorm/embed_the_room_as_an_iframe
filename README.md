@@ -88,6 +88,11 @@ A custom email address can be used as a registration attribute in the
 registration settings of the event. Here, the `Custom Email` attribute has been
 added as a required field to register to the event.
 
+Custom attribute creation:
+![image](https://github.com/livestorm/embed_the_room_as_an_iframe/assets/4329537/de7f5f66-3df9-474e-a1dc-f1f403e597cf)
+
+Set custom attribute as a registration field:
+![image](https://github.com/livestorm/embed_the_room_as_an_iframe/assets/4329537/790e7857-56a8-4997-9dd3-622d4bcf60dc)
 
 When done, using the Livestorm API, you'd be able to register the user with the
 registration attributes, and get a response back from Livestorm with the unique
