@@ -25,6 +25,7 @@ Note that, in that case, you would still be able to register participants to the
 event with a unique link, but the provided email address would be anonymised to
 something like `1720541770+a3ca5465-bc23-4999-b28d-03a23eb46a94@unknown.livestorm.co`
 
+![image](https://github.com/livestorm/embed_the_room_as_an_iframe/assets/4329537/0398deb0-1494-4373-8bff-0118a2d1a289)
 
 
 ### define the external URL to embed a Livestorm session
