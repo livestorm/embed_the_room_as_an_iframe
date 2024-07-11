@@ -9,4 +9,7 @@ and that the generated email address, of the form `1720628126+528d3ec6-b983-4353
 
 It is important to note that interacting directly with the Livestorm API from the HTML / JavaScript code like exposed in this example does not reflect what should be done in production, where a backend server would be more suited to send Livestorm API requests.
 
-![image](https://github.com/livestorm/embed_the_room_as_an_iframe/assets/4329537/ec0ef666-c3df-4bff-804b-a79deddba75f)
+
+
+https://github.com/livestorm/embed_the_room_as_an_iframe/assets/4329537/6c754457-292f-4a7e-8178-9c06c1a57ee2
+
