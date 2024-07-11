@@ -90,6 +90,7 @@ meaning that they won't receive a unique connection link to join the Livestorm
 session in their mailbox, just like registrants to regular events do. However,
 using the Livestorm API, users registered anonymously will still receive a unique
 connection link, that will contain an automatically generated email address, e.g.:
+
 Connection link:
 ``` 
 https://app.livestorm.co/p/fe9e2c48-a993-4d81-afbe-ed483f2d3576/live?email=1720628126%2B528d3ec6-b983-4353-bcbf-eddb1566d013%40unknown.livestorm.co&key=b794f5a32ad48829366806&s=0abbcb51-4a95-46d7-9879-fd141986a3a8
