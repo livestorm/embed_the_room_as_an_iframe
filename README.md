@@ -85,6 +85,22 @@ curl --request PUT \
 
 ### register participants as anonymous users with a custom email address
 
+Users registering to a session of a public event will be anonymously registered,
+meaning that they won't receive a unique connection link to join the Livestorm
+session in their mailbox, just like registrants to regular events do. However,
+using the Livestorm API, users registered anonymously will still receive a unique
+connection link, that will contain an automatically generated email, e.g.:
+``` 
+https://app.livestorm.co/p/fe9e2c48-a993-4d81-afbe-ed483f2d3576/live?email=1720628126%2B528d3ec6-b983-4353-bcbf-eddb1566d013%40unknown.livestorm.co&key=b794f5a32ad48829366806&s=0abbcb51-4a95-46d7-9879-fd141986a3a8
+```
+
+Working with an anonymised unique connection link that does not contain the
+actual user email address can be an issue to track down the attendance of the
+Livestorm session for instance. Since the email address is often used as a key
+to identify a user, we suggest to register users with a custom attribute that
+will contain the actual user email address, therefore allowing you to tag the
+user joining the session with his actual email address.
+
 A custom email address can be used as a registration attribute in the
 registration settings of the event. Here, the `Custom Email` attribute has been
 added as a required field to register to the event.
