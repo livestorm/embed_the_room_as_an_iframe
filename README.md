@@ -13,9 +13,10 @@ must explicitly configure the following:
 - define the external URL allowed to embed the session
     - this is done on a per session basis using the Livestorm API, as described [below](#define-the-external-url-to-embed-a-livestorm-session)
 - register participants as anonymous users with a custom email address
-    - this can be done with the Livestorm API, as described [here](#register-participants-as-anonymous-users-with-a-custom-email-address)
-- configure his embedding web page to build the `<iframe />` DOM element that
+    - this can be done with the Livestorm API, as described [below](#register-participants-as-anonymous-users-with-a-custom-email-address)
+- configure the embedding web page to build the `<iframe />` DOM element that
   will hold the Livestorm session
+    - see the [Examples](#examples] section below
 
 ### make the event publicly accessible only
 
