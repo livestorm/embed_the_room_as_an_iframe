@@ -32,7 +32,7 @@ something like `1720541770+a3ca5465-bc23-4999-b28d-03a23eb46a94@unknown.livestor
 
 ### define the external URL to embed a Livestorm session
 
-The URL to embed a Livestorm session can be set via a [the REST API](https://developers.livestorm.co/reference).
+The URL to embed a Livestorm session can be set with [the REST API](https://developers.livestorm.co/reference).
 
 In the example below, we explicitly allow the website URL `https://my.external.domain.co/embedding_page.html`
 to embed the Livestorm session identified with `657bf7da-3d26-4865-8284-35bd882539ff`.
